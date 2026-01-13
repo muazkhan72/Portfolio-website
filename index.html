@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b7ce508c1b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- =================================HEADER SECTION============================================= -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h2><span>P</span>ortfolio</h2>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+            </nav>
+            <div id="imagediv"><img src="images/profile 1.png" alt=""></div>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Muaz</span> <br>Khan From India</h1>
+                <p class="para1">Full Stack Web Developer</p>
+                <p class="para2">I build exceptional digital experiences that are fast,<br>accessible, and visually appealing. Let's create something<br>amazing together.</p>
+                <a href="#contact" class="btn btn2 btn3">Hire Me</a>
+                <a href="#portfolio" class="btn btn2 btn3">View Work</a>
+            </div>
+        </div>
+    </div>
+    <!-- =======================================ABOUT SECTION ==================================-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about me pic.png" alt="user-photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a Full Stack Web Developer skilled in building responsive and user-friendly web applications. I work with HTML, CSS, JavaScript, React.js, Node.js, Express.js, and MongoDB. I enjoy learning new technologies, solving problems, and creating efficient digital solutions.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link onclick" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End-Developer</span><br>Skills: HTML, CSS, Bootstrap, JavaScript, React.js</li>
+                            <li><span>Back-End-Developer</span><br>Skills: Node.js, Exprees.js, RESTful APIs, Authentication & Authorization</li>
+                            <li><span>Database</span><br>Skills: SQL, MongoDB, CRUD Operations, Database Design</li>
+                            <li><span>Tools & Technologie</span><br>Skills: Git & GitHub, VS Code</li>
+                            <li><span>Soft Skills</span><br>Skills: Problem-solving, Team collaboration, Continuous learning, Time management</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>MERN Full Stack Developer</span><br>June 2025 - Present</li>
+                            <li>Gained practical knowledge in developing full stack web applications using MongoDB, Express.js, React.js, and Node.js. Built responsive user interfaces, developed REST APIs, and worked with databases while following industry best practices.</li>
+                            <li><span>Full Stack Web Developer</span><br>November 2024 - April 2025</li>
+                            <li>Gained hands-on experience in building responsive web applications using HTML, CSS, JavaScript, React.js, Node.js, and MongoDB. Worked on frontend and backend development, API integration, and database operations while following best coding practices.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor of Technology(B.Tech) in Computer Science and Engineering From Future Institute of Engineering and Technology</span><br>July 2020 - August 2024</li>
+                            <li><span>Intermediate From Fatima leyan Public School</span><br>April 2019 - May 2020</li>
+                            <li><span>HighSchool From Sacred Heart Convent School</span><br>April 2017 - May 2018</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======================================SERVICES SECTION======================================= -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-laptop-code"></i>
+                    <h2>Frontend Development (React.js)</h2>
+                    <ul>
+                        <li>Responsive and modern UI development</li>
+                        <li>Single Page Applications (SPA)</li>
+                        <li>State management (Redux / Context API)</li>
+                        <li>Performance optimization & component reuse</li>
+                    </ul>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-server"></i>
+                    <h2>Backend Development (Node.js & Express.js)</h2>
+                    <ul>
+                        <li>RESTful API development</li>
+                        <li>Server-side logic and authentication</li>
+                        <li>Secure user login & authorization (JWT)</li>
+                        <li>Error handling & validation</li>
+                    </ul>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-database"></i>
+                    <h2>Database Management (MongoDB)</h2>
+                    <ul>
+                        <li>Database design & schema modeling</li>
+                        <li>CRUD operations</li>
+                        <li>Data optimization & indexing</li>
+                        <li>MongoDB Atlas setup</li>
+                    </ul>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==================================PORTFOLIO SECTION============================= -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/snake game.png">
+                    <div class="layer">
+                        <h3>Snake Game</h3>
+                        <p>Built an interactive Snake Game using HTML, CSS, and JavaScript with smooth controls, collision detection, and score tracking. This project highlights my skills in game logic, DOM manipulation, and responsive UI design.</p>
+                        <a href="https://muazkhan72.github.io/Hungry-snake-game/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/digital-clock.png">
+                    <div class="layer">
+                        <h3>Digital Clock</h3>
+                        <p>Built a responsive Digital Clock using HTML, CSS, and JavaScript. It dynamically displays the current time with real-time updates, using JavaScript for functionality and CSS for a clean, modern design</p>
+                        <a href="https://muazkhan72.github.io/Digital-Clock/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/calculator.png">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>A responsive calculator built with HTML, CSS & JavaScript. Performs basic arithmetic operations with a clean interface and smooth interactive functionality.</p>
+                        <a href="https://muazkhan72.github.io/Calculator/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/kind heart charity.png">
+                    <div class="layer">
+                        <h3>Kind Heart Charity</h3>
+                        <p>A responsive charity website built with HTML, CSS & JavaScript, featuring interactive sections, smooth navigation, and dynamic content to showcase projects and donations</p>
+                        <a href="https://github.com/muazkhan72/Kind-heart-charity.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/to-do-list.png">
+                    <div class="layer">
+                        <h3>To-Do-List</h3>
+                        <p>A responsive To-Do List app built with HTML, CSS & JavaScript, allowing users to add, edit, complete, and delete tasks with an interactive interface</p>
+                        <a href="https://muazkhan72.github.io/To-Do_List-app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/quote generator.png">
+                    <div class="layer">
+                        <h3>Quote Generator</h3>
+                        <p>A simple and interactive Quote Generator built using HTML, CSS, and JavaScript that displays random inspirational quotes with a click, showcasing DOM manipulation and responsive UI design.</p>
+                        <a href="https://github.com/muazkhan72/Quote-Generator.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/muazkhan72" class="btn">See more</a>
+        </div>
+     </div>
+     <!-- ===========================================CONTACT SECTION================================= -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><a href="mailto:muazkhan114534@gmail.com"><i class="fa-solid fa-paper-plane"></i>muazkhan114534@gmail.com</a></p>
+                    <p><a href="tel:+91-7253069812"><i class="fa-solid fa-square-phone"></i>Call +91-7253069812</a></p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1K77o2txHb/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/muaz.khan.72/?utm_source=qr&igsh=cXNnNTJuZTB1eGNm#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/muaz-khan-8151483a1"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/muazkhan72"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/Muaz resume up.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="#">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Crafted with code, creativity & <i class="fa-solid fa-heart"></i> by Muaz Khan Building modern, responsive & scalable web apps.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
